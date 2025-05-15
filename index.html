@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjalika Water Park</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <!-- Add this inside your <head> tag -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<script>
+    const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const answer = btn.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+
+<body>
+    <div class="splendid-content" id="home">
+
+
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+                            <div class="container-fluid">
+                                <!-- Logo -->
+                                <a class="navbar-brand" href="#">
+                                    <img src="./image/Sanjalika-removebg-preview.png" alt="logo" width="100"
+                                        height="110">
+                                </a>
+
+                                <!-- Toggle button for mobile view -->
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <!-- Navbar links -->
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav ms-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="index.html">HOME</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                The Park
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="aboutUs.html">ABOUT US</a></li>
+                                                <li><a class="dropdown-item" href="facilities.html">FACILITIES</a></li>
+                                                <li><a class="dropdown-item" href="foodZone.html">FOOD ZONE</a></li>
+                                                <li><a class="dropdown-item" href="gallary.html">GALLARY</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="rides.html">RIDES</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="tickets.html">TICKETS</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="locationMap.html">SANJALIKA LOCATION MAP</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contectUs.html">CONTACT</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <button type="button" class="btn btn-outline-primary">
+                                                <a href="schoolreservation.html"> SCHOOL RESERVATIONS</a>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="banner">
+                        <video autoplay muted loop playsinline class="bg-video">
+                            <source src="./image/bannervedio.mp4" type="video/mp4">
+                        </video>
+                        <div class="content">
+                            <div class="col-12 mb-5">
+                                <h5 class="mt-5">YOUR NEXT HOLYDAY IN</h5>
+                                <h1 class="mts-5">SANJALIKA WATER PARK</h1>
+
+                            </div>
+                            <button class="textbtn p-2">THE GRATE SANJALIKA WATER PARK WILL BE OPEN ON DAILY BASES
+                                FROM 1ST MAY 2025</button>
+                            <div class="col-12 mt-3">
+                                <button class="btn-social fb ">Facebook</button>
+                                <button class="btn-social insta">Instagram</button>
+                                <button class="btn-social ty">Youtube</button>
+                            </div>
+
+                            <di class="col-12 mt-3">
+                                <p>For more update get in touch with the greate Sanjalika Water Park</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+       
+
+        <section class="parkinfo p-2">
+            <div class="container  my-5">
+                <div class="row g-4">
+                    <!-- Left Column -->
+                    <div class="col-md-6">
+                        <div class="p-4 text-white" style="background-color: #de507f; border-radius: 10px;">
+                            <h2 class="text-center mb-3">Welcome to the Great Sanjalika Water Park</h2>
+                            <p class="text-center">
+                                It is sprawled over 55 acres of land with captivating environs and enjoyable setting.
+                                For peace and natural lover the Great fiesta is definitely an ultimate destination.
+                                Where you can make your holiday memorable.
+                                We assure you our cleanest blue waters, mixed with cool breeze, will make you shiver,
+                                even in the hottest summer days. Try it.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center"
+                            style="height: 100%; background-color: #23bceb; border-radius: 10px;">
+                            <div class="p-4">
+                                <h4 class="text-white">About</h4>
+                                <p class="text-white">
+                                    The Great Sanjalika Water Park, Karachi, a truly world class water by all means.
+                                    The Great Fiesta is a hi-tech, action packed, thrilling entertainer with amazing
+                                    features for all ages.
+                                </p>
+                                <a href="#" class="btn btn-lg mt-3"
+                                    style="background-color: #de507f; color: white; font-weight: bold;">
+                                    READ MORE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="allInfoNow p-5">
+            <div class="row">
+                <div class="col-12 hero-text text-center p-3 "> Pakistan’s Best Water Rides
+                </div>
+                <div class="col-md-6 text-center p-4">
+                    <h1>14+</h1>
+                    <h5>Adults Rides</h5>
+                    <p>Relax and enjoy meter high waves in Wave pool and long, lazy river. For thrill seekers, check out
+                        the aqua loop rides including the incredible free falls and cyclone. Our Rainbow, Rim Jim, Raft
+                        and Spiral offer the ultimate surfing experience.</p>
+                </div>
+                <div class="col-md-6 text-center p-4">
+                    <h1>17+</h1>
+                    <h5>Kids Rides</h5>
+                    <p>Little kids with their moms can enjoy Ladies and Kids Pool, where mini titanic and aqua play
+                        awaits for them. The Great Fiesta is not only for Teens it is designed in a way that it caters
+                        for all age groups right from 2 years to 80 years.</p>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+ <div class="content2">
+            <section class="questions">
+                <div class="row">
+                    <div class="container py-5" style="background-color: #1dbff6;">
+                        <h2 class="text-center text-white mb-4">FREQUENTLY QUESTIONED ANSWERS?</h2>
+
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        Park Is Open & Timing:
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        The Great Sanjalika Water Park will be open on daily basis from 1st May 2025
+                                        <p>--------------------------------------</p>
+
+                                        <h2>Operating Hours:</h2>
+                                        <h5>10:30 AM to 5:30 PM</h5>
+                                        <h2>Lunch & Prayer Break:</h2>
+                                        <p>Saturday & Sunday 1:00 PM to 2:00 PM <br>
+                                            *WhatsApp Subscribe:> Send ‘REG’ to +923333529941*</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        Tickets Pricing:
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>Adults/Children:► Per Person Rs.1500/- <br>
+                                            Child upto one year is free.<br>
+                                             Cash Accepted. We do also Accept Credit / Debit Cards, JazzCash,
+                                            EasyPaisa and Online Payments.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed fw-bold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        Sanjalika Location Map:
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>Fiesta Location Map:►</p>
+                                        --
+                                        <p>Address: Survey No. 25, Deh Amilano Tappo Kathore, Main Super Highway,
+                                            Karachi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed fw-bold text-primary" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                        Why Only Boys Are Not Allowed?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+
+                                        <p>This is Company Policy. <br>
+                                            Only Families Are Allowed.<br>
+                                            (With Ratio of Maximum 60% Boys & Minimum 40% Girls)<br>
+                                            –<br>
+                                            01 Example<br>
+                                            if you have 10 Person 6 Male 4 Female is ratio 60/40 is compulsory.<br>
+                                            –<br>
+                                            02 Example<br>
+                                            1 Male & 1 Female Are Allowed.<br>
+                                            –<br>
+                                            Only Boys are Not Allowed:<br>
+                                            thegreatfiesta.com/restrictions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+
+    <!-- <section class="location-section mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+                    <h2>Sanjilika Location Map</h2>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="https://maps.google.com/?q=fiesta+karachi" target="_blank"
+                        class="btn btn-outline-light fw-bold">
+                        LOCATION MAP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <footer class="m-0">
+        <div class="row">
+            <div class="col-md-4 parkLogo p-5">
+                <img src="./image/Sanjalika-removebg-preview.png " alt="">
+                <h4>The Great Sanjalika Family Water Park Largest Water Park in Karachi</h4>
+            </div>
+            <div class="col-md-4 p-5">
+                <div class="info">
+                    <h3>Contact Us</h3>
+                    <p> For any queries and updates please feel free to contact us:</p>
+
+                    <div>
+                        <i class="fa-solid fa-location-dot p-2"> </i>
+                        Survey No. 25, Deh Amilano Tappo Kathore, Main Super Highway, Karachi
+                    </div><br>
+                    <div>
+                        <i class="fa-solid fa-phone-volume p-2"></i>
+                        +92 333 3529940/41 <br>
+                        +92 336 3529940/41
+                    </div><br>
+                    <div>
+                        <i class="fa-solid fa-envelope p-2"></i>
+                        info@thegreatfiesta.com
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 p-5">
+                <div class="icon text-center">
+                    <a href=""><i class="fa-brands fa-facebook fa-2x p-1"></i> </a>
+                    <a href=""><i class="fa-brands fa-square-instagram fa-2x p-1"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter fa-2x p-1"></i></a>
+                    <a href=""><i class="fa-brands fa-square-youtube fa-2x p-1"></i></a>
+
+                </div>
+                <div class="vediolink p-4">
+                    <iframe width="250" height="200" src="https://www.youtube.com/embed/zuHrrak6EgY?si=1NqyJf3ydnEKol1s"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-dark text-center p-4">
+            <p> © Copyrights 2024 FORTY MAN (PVT) LTD - All Rights Reserved. | Managed By: QamarAbbas</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

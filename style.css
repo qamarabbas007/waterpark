@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #e0f7fa;
+  color: #003366;
+  overflow-x: hidden;
+
+}
+
+header {
+  /* max-width: 1200px; ya koi bhi desired width like 900px */
+
+  /* height: 50px;    center align */
+  padding-top: 10px;
+  /* Adjust the top padding */
+  padding-bottom: 10px;
+  /* Adjust the bottom padding */
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.dropdown-menu {
+  background-color: #2e2d2d !important;
+  /* Black background */
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white !important;
+  /* White text */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #333 !important;
+  /* Slightly lighter black on hover */
+  color: white !important;
+}
+
+/* Remove the arrow */
+a.nav-link.dropdown-toggle::after {
+  display: none;
+
+}
+
+/* Enable dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+
+  
+}
+
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+
+
+.navbar-nav .nav-link:hover {
+  color: white !important;
+  background-color: #0d6efd !important; /* Bootstrap primary blue */
+  border-radius: 5px;
+}
+
+.nav-item button a{
+  text-decoration: none;
+}
+/* ------------------------------------------------------ */
+.banner {
+  position: relative;
+  height: 130vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.content h1 {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+
+.content h5 {
+  letter-spacing: 10px;
+
+
+}
+
+.textbtn {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  background-color: rgb(253, 10, 10);
+  border-radius: 40px;
+  margin-top: 250px;
+  height: 65px;
+  border: none;
+}
+
+.btn-social {
+  width: 140px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.fb {
+  background-color: rgb(52, 3, 189);
+}
+
+.insta {
+  background-color: rgb(226, 49, 179);
+}
+
+.ty {
+  background-color: red;
+}
+
+
+
+
+/* ---------------------------------------------------------------------- */
+.parkinfo {
+  background-image: url(./image/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* ---------------------------------------------------------------------- */
+.hero-text {
+  font-size: 35px;
+}
+
+.allInfoNow {
+  position: relative;
+  background-image: url('./image/bg2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  overflow: hidden;
+  height: 500px;
+}
+
+.allInfoNow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black with 50% opacity */
+  z-index: 1;
+}
+
+.allInfoNow .row {
+  position: relative;
+  z-index: 2;
+  /* Bring content above overlay */
+}
+
+.allInfoNow .row .col-md-6 {
+  width: 50%;
+  height: 100%;
+}
+
+.parkLogo img {
+  width: 180px;
+  height: 140px;
+}
+
+footer {
+  position: absolute;
+  background-color: #003366;
+  color: white;
+  
+  width: 100%;
+
+}
+
+
+
+/* --------------aboutUs---------------- */
+
+
+
+/* ------------Location------------------------------- */
+.location-section {
+  background-color: #f1c40f;
+  /* yellow color */
+  color: white;
+ 
+  padding: 80px 0;
+  width: 100%;
+ 
+
+
+}
+
+.location-section h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+  padding: 12px 24px;
+}
+
+/* ...............contectus......... */
+
+
+.locationMap {
+  position: relative;
+  height: 100vh;
+  top: 15vh;
+  overflow: hidden;
+}
+
+/* ------------------------facilities------------------- */
+.facilities {
+  position: relative;
+  top: 15vh;
+  overflow: hidden;
+}
+
+.Rides {
+  position: relative;
+  top: 15vh;
+  overflow: hidden;
+}
+
+.parkrides {
+  width: 100%;
+  background-color: #003366;
+}
+
+.gallary{
+  position: relative;
+  top: 15vh;
+  overflow: hidden;
+
+}
+
+/* ----------------------------------------- */
+.foodzone{
+  position: relative;
+  top: 15vh;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.foodzone div h1{
+  color: red;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.table thead tr th{
+  background-color: #313570; /* pure black */
+  color: white;
+  height: 60px;
+  text-align: center;
+}
+.custom-row {
+  color: #4a5568;
+}
+.custom-table-container {
+  max-width: 600px;
+  margin: 40px auto;
+}
+.schoolreservation{
+  position: relative;
+  top: 15vh;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.packagesAndDiscount ul li{
+  font-size: 20px;
+  margin-right: 22px;
+  text-align: start;
+}
+.gallary h1{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
